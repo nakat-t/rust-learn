@@ -5,8 +5,8 @@ fn pig_latin(word: &str) -> String {
     return match first {
         Some(ch) if vowel.contains(&ch) => format!("{}-hay", word),
         Some(ch) if ch.is_alphabetic() => format!("{}-{}ay", chars.collect::<String>(), ch),
-        _ => String::from(word)
-    }
+        _ => String::from(word),
+    };
 }
 
 fn pig_latin_print(str: &str) {
